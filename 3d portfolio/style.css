@@ -1,0 +1,319 @@
+@import url("https:/fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
+@import url("https:/fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #010115;
+}
+/* rotate img */
+.box{
+    position: relative;
+    width: 177px;
+    height: 165px;
+    transform-style: preserve-3d;
+    animation: animate 50s linear infinite;
+    bottom: -9vw;
+    left: 14vw
+}
+@keyframes animate{
+   0% {
+transform: perspective(1000px) rotateY(0deg);
+    }
+   100% {
+transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 86%;
+    height: 118%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 45deg)) translateZ(282px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #010115);
+}
+
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(28, 27, 27);
+    border-radius: 18px;
+    object-fit: cover;
+}
+
+
+.header {
+    position: relative;
+    display: flex;
+    place-items: center;
+    justify-content: space-around;
+    background-color: #000;
+    padding: o.10vw;
+
+}
+
+.logo {
+    max-width: 7vw;
+    z-index: 1;
+}
+
+.main-nav-list {
+    display: flex;
+    list-style: none;
+    gap: 3vw;
+    z-index: 3;
+  
+}
+
+.main-nav-list {
+    text-decoration: none;
+    color: #fffa;
+    font-size: 1.8vw;
+    transition: all 0.5s;
+    font-family: "Dancing Script";
+}
+
+.main-nav-list:hover {
+    color: #fff;
+}
+/* card */
+ 
+.card {
+    width: 311px;
+    margin-left: 53vw;
+    margin-top: -16vh;
+    height: 307px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 172px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 311px;
+    
+    margin-top: -5vh;
+    height: 307px;
+    background-image: url(2.0.jpeg);
+    background-size: cover;
+    border-radius:172px;
+    transition: all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 172px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+   }
+
+.hero {
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero-description {
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    margin-top: -70vh;
+    margin-left: -44vw;
+    z-index: 2;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 3.3vw;
+    font-weight: 400;
+    font-family: "EB Garamond";
+
+}
+
+.raj {
+    color: #7a31bf;
+    font-family: "Dancing Script";
+}
+
+.hero-subheading {
+    color: #fff;
+    font-size: 1.8vw;
+    font-weight: 400;
+    font-family: "EB Garamond";
+    margin-left: 2.6vw;
+}
+
+.hero-model {
+    position: absolute;
+}
+
+.hero-model img {
+    height: 60vh;
+    margin-left: -8vw;
+    margin-top: 10vw;
+
+}
+
+.mini-ciecle{
+    position: absolute;
+    display: block;
+    width: 1.2vh;
+    height: 2.3vh;
+    border-radius: 50%;
+    background-color: #fff;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%);
+}
+
+
+
+/* about me */
+
+.time-line-section{
+    position: relative;
+    display: grid;
+    place-items: center;
+    width: 100vh;
+    height: auto;
+    background-color: #010115;
+    background-size: 100vw;
+    padding: 0 10vw;
+    top: 45vw;
+    left: 12vw;
+}
+
+.time-line-content{
+    display: grid;
+    place-items: center;
+    width: 100vh;
+    padding-bottom: 25vh;
+}
+.heading-description{
+    display: grid;
+    place-items: center;
+    margin-bottom: 224vh;
+    margin-left: -50vw;
+}
+
+.time-line-title{
+    color: #ffffff5a;
+    font-size: 1vw;
+    padding-bottom: 2vh;
+}
+
+.time-line-subheading{
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: "Dancing Script";
+    margin-left: 50vw;
+}
+
+.timeline{
+    position:absolute;
+    display: grid;
+    place-items: center;
+}
+
+.line{
+    position: absolute;
+    z-index: 2;
+width: 0.15vw;
+top: 1vh;
+background-color: #fff;
+box-shadow: 0 0 30px #fff;
+}
+
+.line:before,
+.line::after
+{
+position: absolute;
+display: block;
+content: "";
+width: 1.2vw;
+height: 2.3vh;
+border-radius: 50%;
+background-color: #fff;
+left:50%;
+transform: translate(-50%);
+}
+
+.line:after{
+    bottom: 0;
+}
+
+.time-line-description{
+    display: flex;
+    transform: translate(-50%);
+    transition: 600ms ease;
+    position: relative;
+    z-index: 1;
+    margin: 1.2vh 0;
+    padding: 1vw;
+    align-items: center;
+    width: 45vw;
+    left: 20vw;
+    min-height: 35vh;
+    /* opacity: 0;  */
+}
+
+.time-line-description:nth-child(odd) {
+flex-direction: row-reverse;
+transform: translate(-50%);
+}
+.about-me{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 70vw;
+  
+}
+.about-me-description{
+    width: 30vw;
+    height: 35vh;
+    position: absolute;
+    margin-top: -90vh;
+    margin-left: -50vw;
+
+}
+.introduction{
+    color: #ffffff5a;
+    font-size: 1vw;
+    padding-bottom: 2vh;
+}
+.about-me-title{
+    color: #fff;
+    font-size: 3.5vw;
+    font-family: "Dancing Script";
+}
+.about-me-subheading{
+    color: #fffa;
+    font-size: 1.4vw;
+    font-weight: 400;
+    font-family: "EB Garamond";
+    line-height: 1.2;
+    padding-top: 3vh;
+}
+
